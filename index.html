@@ -59,7 +59,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2 style="font-size: 20.8px;">QUESTION 1</h2>
-                                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                                <p class="mb-0">A string of non-zero length</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/portfolio-1.jpg">
                     </a></div>
@@ -67,8 +67,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2 style="font-size: 20.8px;">QUESTION 2</h2>
-                                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on
-                                    top!</p>
+                                <p class="mb-0">An integer between 0 and 9&sup2</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/portfolio-3.jpg">
                     </a></div>
@@ -76,7 +75,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2 style="font-size: 20.8px;">QUESTION 3</h2>
-                                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                <p class="mb-0">Any non zero integer</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/portfolio-4.jpg">
                     </a></div>
@@ -87,49 +86,72 @@
         <div class="content-section-heading text-center">
             <h2 class="mb-5">QUESTIONS</h2>
         </div>
+
+
         <div>
             <div class="row" style="margin: 2px;padding: 0px;">
                 <div class="col-md-4">
                     <section class="card">
                         <h1 style="text-align: center;color: var(--bs-red);">Question 1&nbsp;</h1>
                         <form>
-                            <div class="md-input-group"><label class="form-label md-input-label"></label><textarea
-                                    id="Text" name="textarea" name="TextInput" placeholder="Input"
-                                    onfocus="clearfield()" ; class="form-control md-input"></TEXTAREA></div>
-                            <div class="md-input-group"><label class="form-label md-input-label">Output</label><input
-                                    id="result" name="TextOutput" disabled class="form-control md-input" type="text">
+                            <div class="md-input-group"><label class="form-label md-input-label"></label>
+                                <textarea id="Text" name="textarea" name="TextInput" placeholder="String input"
+                                    onfocus="clearfield()" ; class="form-control md-input"></TEXTAREA>
                             </div>
+                            <div class="md-input-group"><label class="form-label md-input-label"
+                                    placeholder="Output"></label><input id="result" name="TextOutput" disabled
+                                    class="form-control md-input" type="text">
+                            </div>
+                            <br>
                         </form><button class="btn btn-primary d-block md-btn w-100" type="button"
                             style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"
-                            onclick="reverse2()">RESULT</button>
+                            onclick="reverse2()">GET RESULT</button><br>
+                        <button class="btn btn-primary d-block md-btn w-100" type="button"
+                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"
+                            onclick="clearfield()">CLEAR</button>
                     </section>
                 </div>
                 <div class="col-md-4">
                     <section class="card">
                         <h1 style="text-align: center;color: var(--bs-red);">Question 2&nbsp;</h1>
                         <form>
-                            <div class="md-input-group"><label class="form-label md-input-label">Input</label><input
-                                    class="form-control md-input" id="text" type="text"></div>
-                            <div class="md-input-group"><label class="form-label md-input-label">Output</label><input
-                                    class="form-control md-input" id="result" type="text"></div>
+                            <div class="md-input-group"><label class="form-label md-input-label"></label>
+                                <input type="text" id="Text1" placeholder="0 &le; N &le; 9&sup2;" ;
+                                    class="form-control md-input">
+                            </div>
+                            <div class="md-input-group"><label class="form-label md-input-label"></label><input
+                                    type="text" id="result1" disabled class="form-control md-input" id="result1"
+                                    type="text"></div><br>
                         </form><button class="btn btn-primary d-block md-btn w-100" type="button"
-                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">RESULT</button>
+                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"
+                            onclick="reverse1()">GET RESULT</button><br>
+                        <button class="btn btn-primary d-block md-btn w-100" type="button"
+                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"
+                            onclick="clearfield1()">CLEAR</button>
                     </section>
                 </div>
                 <div class="col-md-4">
                     <section class="card">
-                        <h1 style="text-align: center;color: var(--bs-red);">Question 3</h1>
+                        <h1 style="text-align: center;color: var(--bs-red);">Question 3&nbsp;</h1>
                         <form>
-                            <div class="md-input-group"><label class="form-label md-input-label">Input</label><input
-                                    class="form-control md-input" type="text"></div>
-                            <div class="md-input-group"><label class="form-label md-input-label">Output</label><input
-                                    class="form-control md-input" type="text"></div>
+                            <div class="md-input-group"><label class="form-label md-input-label"></label>
+                                <textarea id="Text3" name="textarea" name="TextInput" placeholder="Integer input"
+                                    onfocus="clearfield3()" ; class="form-control md-input"></TEXTAREA>
+                            </div>
+                            <div class="md-input-group"><label class="form-label md-input-label"></label><input
+                                    type="text" id="result3" disabled class="form-control md-input" id="result3"
+                                    type="text"></div><br>
                         </form><button class="btn btn-primary d-block md-btn w-100" type="button"
-                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">RESULT</button>
+                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"
+                            onclick="reverse3()">GET RESULT</button><br>
+                        <button class="btn btn-primary d-block md-btn w-100" type="button"
+                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"
+                            onclick="clearfield3()">CLEAR</button>
                     </section>
                 </div>
             </div>
         </div>
+
         <div class="container">
             <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="https://www.codechef.com/CZIL2021"
                 target="_blank"
@@ -156,6 +178,8 @@
     <script src="assets/js/stylish-portfolio.js"></script>
     <script src="assets/js/Material-Inputs.js"></script>
     <script src="code.js"></script>
+    <script src="code2.js"></script>
+    <script src="code3.js"></script>
     <script src="assets/js/MUSA_input-helper.js"></script>
 </body>
 
