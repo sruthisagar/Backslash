@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/Material-Inputs.css">
     <link rel="stylesheet" href="assets/css/MUSA_input-helper-1.css">
     <link rel="stylesheet" href="assets/css/MUSA_input-helper.css">
+    <script src="code.js"></script>
 </head>
 
 <body id="home"><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
@@ -93,12 +94,15 @@
                     <section class="card">
                         <h1 style="text-align: center;color: var(--bs-red);">Question 1&nbsp;</h1>
                         <form>
-                            <div class="md-input-group"><label class="form-label md-input-label">Input</label><input
-                                    class="form-control md-input" type="text"></div>
+                            <div class="md-input-group"><label class="form-label md-input-label">Input</label><textarea
+                                    id="Text" name="textarea" rows="25" cols="60" name="TextInput" placeholder="String"
+                                    onfocus="clearfield()" ; class="form-control md-input"></TEXTAREA></div>
                             <div class="md-input-group"><label class="form-label md-input-label">Output</label><input
-                                    class="form-control md-input" type="text"></div>
+                                    id="result" size="25" name="TextOutput" disabled class="form-control md-input"
+                                    type="text"></div>
                         </form><button class="btn btn-primary d-block md-btn w-100" type="button"
-                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">RESULT</button>
+                            style="background: rgb(30,153,49);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"
+                            onclick="reverse2()">RESULT</button>
                     </section>
                 </div>
                 <div class="col-md-4">
